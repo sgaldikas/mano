@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: black;
+    color: #F2D888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Low_Tide_at_Pourville%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1947.196.jpg/960px-Low_Tide_at_Pourville%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1947.196.jpg")
+
+}
+
+/* Big container to wrap everything */
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 5px solid #F2D888;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #F2D888;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
+    ;
+}
+
+/* Container for the cards */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card layout */
+.card {
+    display: flex;
+    align-items: center;
+    background: rgba(180, 97, 97, 0.1);
+    border: 2px solid ;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px ;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Left-side image layout */
+.card.left {
+    flex-direction: row;
+}
+
+/* Right-side image layout */
+.card.right {
+    flex-direction: row-reverse;
+}
+
+/* Image styling */
+.card-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #F2D888;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+    margin: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+}
+
+/* Text styling */
+.card-text {
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+    background: #03588C;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Hover effect on cards */
+.card:hover {
+    transform: scale(1.05);
+}
