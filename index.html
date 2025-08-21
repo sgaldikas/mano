@@ -1,46 +1,139 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/media/Ef1JK9xU4AIBnt3.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Simonas Galdikas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Y2K FUTURA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
 </head>
-<body>
+<body class="min-h-screen bg-black text-white font-mono">
 
-<div class="main-container">
-    <h1>Sveiki visi, mano vardas Simas</h1>
-
-    <div class="content">
-        <div class="card">
-            <img src="png/foto1.jpg" class="card-img" alt="Simonas">
-            <div class="card-text">
-                <p>Mano vardas yra Simonas, bet mane dažniausiai vadina Simu.</p>
-            </div>
-        </div>
-
-        <div class="card reverse">
-            <div class="card-text">
-                <p>Man 23 metai, esu baigęs finansų bakalaurą, gyvenu vienas su dviem katinais.</p>
-            </div>
-            <img src="png/kates.jpg" class="card-img" alt="Simonas studijuoja">
-        </div>
-
-        <div class="card">
-            <img src="gif/gif1.gif" class="card-img" alt="Simonas su katinais">
-            <div class="card-text">
-                <p>Mėgstu užsiimti „bouldering'u“ bei šiek tiek pasėdėti prie kompiuterio, sužaisti vieną kitą žaidimą.</p>
-            </div>
-        </div>
+  <!-- Header -->
+  <header class="border-b-4 border-pink-500 bg-gradient-to-r from-purple-900 via-pink-800 to-blue-900 sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <i class="lucide lucide-zap w-8 h-8 text-yellow-400 animate-pulse"></i>
+        <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400">Y2K FUTURA</h1>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <button class="capitalize text-pink-400 underline">all</button>
+        <button class="capitalize hover:text-pink-400">tops</button>
+        <button class="capitalize hover:text-pink-400">bottoms</button>
+        <button class="capitalize hover:text-pink-400">sets</button>
+        <button class="capitalize hover:text-pink-400">footwear</button>
+        <button class="capitalize hover:text-pink-400">accessories</button>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="relative">
+          <i class="lucide lucide-shopping-cart w-6 h-6 text-pink-400"></i>
+          <span class="absolute -top-2 -right-2 bg-pink-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+        </button>
+      </div>
     </div>
+  </header>
 
-</div>
+  <!-- Hero -->
+  <section class="relative h-96 md:h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-pink-800/80 to-blue-900/80 z-10"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://placehold.co/1920x1080/000/fff?text=Y2K+STYLE')"></div>
+    <div class="relative z-20 text-center px-4">
+      <i class="lucide lucide-sparkles w-16 h-16 text-yellow-400 mx-auto mb-4 animate-bounce"></i>
+      <h2 class="text-5xl md:text-8xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400">FUTURE</h2>
+      <h3 class="text-3xl md:text-6xl font-bold mb-8 text-white">PAST</h3>
+      <p class="text-xl md:text-2xl mb-8 text-pink-300">The Y2K Revolution is Back</p>
+      <button class="bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 rounded-full text-xl font-bold hover:scale-105 transition-transform duration-300 shadow-lg">SHOP NOW</button>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="py-16 bg-gradient-to-b from-black to-purple-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h3 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">FEATURED</h3>
+        <div class="w-24 h-1 bg-pink-500 mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="group relative bg-gradient-to-br from-pink-900/20 to-purple-900/20 border border-pink-500/50 rounded-lg overflow-hidden">
+          <div class="aspect-square overflow-hidden">
+            <img src="https://placehold.co/300x300/f0f/000?text=NEON+HAT" alt="Neon Trucker Hat" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2 text-pink-300">Neon Trucker Hat</h4>
+            <p class="text-2xl font-bold text-white">$34.99</p>
+            <button class="w-full mt-4 bg-gradient-to-r from-pink-500 to-purple-600 py-3 rounded-full font-bold">ADD TO CART</button>
+          </div>
+          <div class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded-full text-sm font-bold">NEW</div>
+        </div>
+
+        <div class="group relative bg-gradient-to-br from-pink-900/20 to-purple-900/20 border border-pink-500/50 rounded-lg overflow-hidden">
+          <div class="aspect-square overflow-hidden">
+            <img src="https://placehold.co/300x300/0ff/000?text=LOW+RISE" alt="Low-Rise Denim" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2 text-pink-300">Low-Rise Denim</h4>
+            <p class="text-2xl font-bold text-white">$89.99</p>
+            <button class="w-full mt-4 bg-gradient-to-r from-pink-500 to-purple-600 py-3 rounded-full font-bold">ADD TO CART</button>
+          </div>
+          <div class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded-full text-sm font-bold">NEW</div>
+        </div>
+
+        <div class="group relative bg-gradient-to-br from-pink-900/20 to-purple-900/20 border border-pink-500/50 rounded-lg overflow-hidden">
+          <div class="aspect-square overflow-hidden">
+            <img src="https://placehold.co/300x300/ff0/000?text=PLATFORMS" alt="Platform Sneakers" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2 text-pink-300">Platform Sneakers</h4>
+            <p class="text-2xl font-bold text-white">$129.99</p>
+            <button class="w-full mt-4 bg-gradient-to-r from-pink-500 to-purple-600 py-3 rounded-full font-bold">ADD TO CART</button>
+          </div>
+          <div class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded-full text-sm font-bold">NEW</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t-4 border-pink-500 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <i class="lucide lucide-zap w-6 h-6 text-yellow-400"></i>
+            <h4 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">Y2K FUTURA</h4>
+          </div>
+          <p class="text-gray-400">Bringing the future of 2000 back to the present.</p>
+        </div>
+        <div>
+          <h5 class="font-bold text-pink-300 mb-4">SHOP</h5>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-pink-400">New Arrivals</a></li>
+            <li><a href="#" class="hover:text-pink-400">Best Sellers</a></li>
+            <li><a href="#" class="hover:text-pink-400">Sale</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-pink-300 mb-4">INFO</h5>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-pink-400">About Us</a></li>
+            <li><a href="#" class="hover:text-pink-400">Shipping</a></li>
+            <li><a href="#" class="hover:text-pink-400">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-pink-300 mb-4">CONNECT</h5>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-pink-500/20 rounded-full flex items-center justify-center hover:bg-pink-500"><span class="text-pink-400 font-bold">IG</span></a>
+            <a href="#" class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center hover:bg-blue-500"><span class="text-blue-400 font-bold">FB</span></a>
+            <a href="#" class="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center hover:bg-purple-500"><span class="text-purple-400 font-bold">TT</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-pink-500/30 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Y2K FUTURA. All rights reserved. Made with ✨ for the future.</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-
